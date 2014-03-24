@@ -1,0 +1,9 @@
+package toucan_1308_ravan;
+
+public class ExceptionHandler implements Thread.UncaughtExceptionHandler 
+{
+	public void uncaughtException (Thread t, Throwable e)
+	{
+		System.out.println("> Oops at "+t.getName());
+	}
+}
